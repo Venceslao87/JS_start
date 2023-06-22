@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: lightblue;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Hello">
+        Hello, world!
+    </div>
+    <script>
+        let my = document.querySelector("#Hello");
+        my.addEventListener("click", function() {
+            my.innerHTML = "Привіт, Світ!";
+        })
+    </script>
+</body>
+</html>
