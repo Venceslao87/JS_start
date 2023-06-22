@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatination</title>
+</head>
+<body>
+    <script>
+        // Конкатенація — операція склеювання рядків.
+        let msg1 = "Hello";
+        let msg2 = "World!";
+        let join = msg1 + msg2;
+        console.log(join);
+
+        let x = "20";
+        let y = "30";
+        let sum = x + y;
+        console.log(sum);// В данному випадку 20 і 30 виступають не як числа, а як строки,тому їх сума
+        // не арифметична дія, а конкатенація, тому результатом буде не число 50, а 2030.
+
+        let items = 5;
+        let totalCost = 230;
+        let price = 'Вартість ' + items + ' одиниць товару дорівнює — ' + totalCost + ' Ціна за 1 одиницю — ' + totalCost/items;
+        console.log(price);
+    </script>
+</body>
+</html>

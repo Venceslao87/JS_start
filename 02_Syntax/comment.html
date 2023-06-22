@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>My JS exercise</title>
+    <style>
+        div {
+            background-color: lightblue;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello,world!
+    </div>
+    <script>
+        //Створюємо змінну з ім'ям element і привласнюємо їй перший HTML елемент div, який буде знайдений у документі. 
+        let element = document.querySelector("div");
+        /*"Вішаємо" обробник на подію click (клік лівою кнопкою миші).
+        При натисканні HTML елемента, що знаходиться в змінній element, буде запускатися функція-обробник.
+        */
+       element.addEventListener("click", function() {
+        element.innerText = "Привіт, світ!"; // для HTML елемента, який перебуває у змінній element, змінюємо значення тексту, що знаходиться у елементі.
+       }
+       )
+    </script>
+</body>
+</html>

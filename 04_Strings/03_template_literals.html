@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template literals</title>
+</head>
+<body>
+    <script>
+        let items = 6;
+        let totalCost = 540;
+        let price = totalCost/items;
+
+        // приклад через конкатенацію
+        let message = 'Кількість товару — ' + items + ' Коштує — ' + totalCost + ' Ціна за штуку — ' + totalCost/items;
+        console.log(message);
+
+        // Приклад через щаблонний рядок
+
+        let message1 = `Кількість товару — ${items} одиниць коштує — ${totalCost}. Ціна за штуку — ${price}`;
+        console.log(message1);
+
+    </script>
+</body>
+</html>
