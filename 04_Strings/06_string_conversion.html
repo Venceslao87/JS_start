@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String conversion</title>
+</head>
+<body>
+    <script>
+        //alert(123);// alert автоматично перетворює значення до рядка
+        // перетворення до рядкового типу
+        let value = true;// тип даних boolean
+        console.log(typeof value);
+
+        
+        //Глобальний метод створення рядків
+        let newValue = String(value);// заміна типу Boolean на тип String
+        console.log(typeof newValue);
+        console.log(newValue);
+
+        // альтернативний засіб перетворення до рядкового типу 
+        newValue = value.toString();// метод перетворення об'екту.
+        console.log(typeof newValue);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Variable</title>
+</head>
+<body>
+    <script>
+        // Перетворення типів — перетворення значення одного типу на значення іншого типу. 
+        // Може відбуватися автоматично або за допомогою спеціальних функцій.
+
+        console.log("12"/"6");// первторення відбулося автоматично.
+        console.log("12"+"35");// Виняток: при складанні рядків перетворення не вівдбувається.
+
+        let g = 9.81;
+        console.log(typeof g);
+        let value = "100"; // 
+        console.log(typeof value);
+
+        let newvalue = Number(value);
+        console.log(typeof newvalue);
+        // пертворення змінної string to number
+
+        let sometext = "Hello";
+        let converted =  Number(sometext);
+        console.log(converted);
+        // При спробі повернути числом змінну, яка не може бути числом взагалі, функція поверне значення NaN.
+
+        console.log(Number(null));
+        // При перетворенні змінної null на число, функція поверне 0
+
+        console.log(Number(true));
+        console.log(Number(false));
+        // При перетворенні змінної бульового значення в число отримуємо 1 — true, та 0, якщо false
+
+        console.log(Number("     6     ") + 2);
+    </script>
+    
+</body>
+</html>
