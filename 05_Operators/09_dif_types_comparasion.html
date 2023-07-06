@@ -15,6 +15,14 @@
         console.log(null == undefined);// true – значення null сконвертовано до 0, значення undefined сконвертовано до 0
         console.log("" == 0);// значення '' (значення пусто) дорівнює 0
 
+        //строге порівняння "==="
+        //при порівняння різних типів не виконується конвертація, тому резултат порівняння буде – false
+        
+        console.log(false === 0);//false
+        console.log(true === 1);// false
+        console.log (null === undefined);//false
+        console.log('' === 0);//false
+
 
     </script>
 </body>
